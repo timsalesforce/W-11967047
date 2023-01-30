@@ -17,7 +17,7 @@
 14. Observe the Parent Campaign field is now blank
 
 This is happening because ADS is evicting the parent campaign when the getRecord fails.  That happens here:
-https://sourcegraph.soma.salesforce.com/perforce.soma.salesforce.com/app/main/core/-/blob/ui-force-components/components/force/recordLibrary/records.js?L700:29&popover=pinned
+https://sourcegraph.soma.salesforce.com/perforce.soma.salesforce.com/app/main/core@eed8a043076e09c2af86583e288dad90ebde0661/-/blob/ui-force-components/components/force/recordLibrary/records.js?L700:29&popover=pinned
 
 The request is to check the "Require permission to view record names in lookup fields" sharing pref before evicting it.
 
